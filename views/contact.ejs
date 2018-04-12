@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Germinate an Agriculture Category Flat Bootstrap Responsive Website Template | Contact Us :: w3layouts</title>
+<title>Germinate an Agriculture Category Flat Bootstrap Responsive Website Template | Creat Course :: w3layouts</title>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,32 +22,65 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
 <script type="text/javascript" src="//maps.googleapis.com/maps/api/js"></script>
+<script src="ckeditor/ckeditor.js"></script>
+<script src="js/107512/datepicker"></script>
+
+<!-- 107512 menu -->
+<link href="css/107512/menu.css" rel="stylesheet"> 
+<link href="css/107512/menustyle107512.css" rel="stylesheet"> 
+<link href="css/107512/menustyle107512.scss" rel="stylesheet"> 
+
+<!-- /自己改的CSS -->
+<link href="css/107512/mainfont.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/107512/mainsetting.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/107512/107512style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome-icons -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
 <!-- //font-awesome-icons -->
 <link href="//fonts.googleapis.com/css?family=Bree+Serif&amp;subset=latin-ext" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- //datepicker -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- //datepicker -->
+<script>
+	$( function() {
+	  $( "#datepickerS" ).datepicker({ minDate: +3, maxDate: "+1M +10D",dateFormat:"yy-mm-dd" });
+	    
+	} );
+</script>
+<script>
+	$( function() {
+	  $( "#datepickerF" ).datepicker({ minDate: +3, maxDate: "+1M +10D",dateFormat:"yy-mm-dd"});
+	} );
+</script>
 </head>
 	
 <body>
 <!-- banner -->
-	<div class="banner1">
+	<div class="banner2"  style="height:10px">
 		<div class="container">
-			<div class="w3_agileits_banner_main_grid">
-				<div class="w3_agile_logo">
+			<div class="w3_agileits_banner_main_grid" >
+				<div class="w3_agile_logo" >
 					<h1><a href="/index"><span>G</span>erminate<i>Grow healthy products</i></a></h1>
 				</div>
+				<!--
 				<div class="agile_social_icons_banner">
 					<ul class="agileits_social_list">
 						<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					
 						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 						<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
 						<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+					
 					</ul>
 				</div>
+				-->
 				<div class="agileits_w3layouts_menu">
 					<div class="shy-menu">
-						<a class="shy-menu-hamburger">
+						<!--<a class="shy-menu-hamburger">
 							<span class="layer top"></span>
 							<span class="layer mid"></span>
 							<span class="layer btm"></span>
@@ -55,18 +88,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="shy-menu-panel">
 							<nav class="menu menu--horatio link-effect-8" id="link-effect-8">
 								<ul class="w3layouts_menu__list">
-									<li><a href="/index">Home</a></li>
+									<li class="active"><a href="/index">Home</a></li>
 									<li><a href="/about">About Us</a></li> 
 									<li><a href="/services">Services</a></li>
 									<li><a href="/gallery">Gallery</a></li> 
-									<li class="active"><a href="/contact">Contact Us</a></li>
+									<li><a href="/contact">Contact Us</a></li>
 								</ul>
 							</nav>
-						</div>
+						</div>-->
 						<div class="clearfix"> </div>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
+			</div>
+			<!--- connect menu.css start-->
+			<div class="menu-icon107512">
+				<span class="menu-icon__line menu-icon__line-left"></span>
+				<span class="menu-icon__line"></span>
+				<span class="menu-icon__line menu-icon__line-right"></span>
+			</div>
+
+			<div class="nav107512">
+				<div class="nav__content">
+					<ul class="nav__list">
+						<li class="nav__list-item"><a href="/index">Home</li>
+						<li class="nav__list-item"><a href="/about">About</li>
+						<li class="nav__list-item"><a href="/services">Services</li>
+						<li class="nav__list-item"><a href="/gallery">Gallery</li>
+						<li class="nav__list-item"><a href="/contact">Contect</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -102,11 +153,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="w3layouts_breadcrumbs_left">
 				<ul>
 					<li><i class="fa fa-home" aria-hidden="true"></i><a href="/index">Home</a><span>/</span></li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i>Lesson</li>
 				</ul>
 			</div>
 			<div class="w3layouts_breadcrumbs_right">
-				<h2>Contact Us</h2>
+				<h2>Creat Course</h2>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
@@ -115,52 +166,63 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- contact -->
 	<div class="welcome">
 		<div class="container">
-			<h3 class="agileits_w3layouts_head">Get in<span> touch</span> with us</h3>
+			<h3 class="agileits_w3layouts_head">創造<span> 屬於你的</span> 課程</h3>
 			<div class="w3_agile_image">
 				<img src="images/1.png" alt=" " class="img-responsive" />
 			</div>
-			<p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
-			<div class="w3ls_news_grids">
-				<div class="col-md-8 w3_agile_mail_left">
+			<p class="agile_para contactTitle1">作為自然共學的小小老師，就從這一步開始 ! .</p>
+			<div class="w3ls_news_grids" >
+				<div class="col-md-10 w3_agile_mail_left" >
 					<div class="agileits_mail_grid_right1 agile_mail_grid_right1">
+							<p class="contactTitle2">建立課程基本資料 !</p>
 						<form action="#" method="post">
 							<span>
-								<i>Name</i>
+								<i>課程名稱</i>
 								<input type="text" name="Name" placeholder=" " required="">
 							</span>
 							<span>
-								<i>Email</i>
-								<input type="email" name="Email" placeholder=" " required="">
+								<i>開始日期</i>
+								<input type="text" name="datestart" placeholder=" " required="" id="datepickerS">
+								<i>結束日期</i>
+								<input type="text" name="datefinal" placeholder=" " required="" id="datepickerF">
 							</span>
+							<!---
 							<span>
 								<i>Subject</i>
 								<input type="text" name="Subject" placeholder=" " required="">
-							</span>
+							</span>-->
+							
 							<span>
-								<i>Message</i>
+								<i>課程敘述</i>
 								<textarea name="Message" placeholder=" " required=""></textarea>
 							</span>
+							<span>
+								<i>課程圖片上傳</i>
+							</span>
+							<form action="/somewhere/to/upload" enctype="multipart/form-data">
+
+								<input type="file" onchange="readURL(this)" targetID="preview_progressbarTW_img" accept="image/gif, image/jpeg, image/png"/ >
+							 
+								<img id="preview_progressbarTW_img" src="#" / style="max-width: 250px; display:block; margin:auto;" >
+							 
+							 </form>
 							<div class="w3_submit">
-								<input type="submit" value="Submit Now">
+								<input type="submit" value="建立">
+							</div>
+							<div class="view">
+								<input type="button" value="預覽">
 							</div>
 						</form>
 					</div>
+					
 				</div>
-				<div class="col-md-4 w3_agile_mail_right">
+				<div class="col-md-10 w3_agile_mail_right">
 					<div class="w3_agileits_mail_right_grid">
-						<h4>About Plantation</h4>
-						<p>Donec libero lectus, feugiat vel elit nec, mattis tempor mi ante.</p>
-						<h5>Follow Us On</h5>
-						<ul class="agileits_social_list">
-							<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-						</ul>
-						<div class="w3_agileits_mail_right_grid_pos">
-							<img src="images/12.jpg" alt=" " class="img-responsive" />
-						</div>
+						<h4 class="contactTitle2">課程預覽</h4>
+						<h5>敬請期待</h5>
+						
 					</div>
+					<!---
 					<div class="w3_agileits_mail_right_grid_main">
 						<div class="w3layouts_mail_grid_left">
 							<div class="w3layouts_mail_grid_left1 hvr-radial-out">
@@ -193,13 +255,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="clearfix"> </div>
 						</div>
 					</div>
+					-->
+					
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
 	<div id="map"></div>
-<!-- //contact -->
+
+<!-- //contact 
 	 <script type="text/javascript">
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
@@ -233,7 +298,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     title: 'Snazzy!'
                 });
             }
-        </script>
+		</script>
+  -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -289,6 +355,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //footer -->
+
+<!-- 107512 menu -->
+<script src="js/107512/menu.js"></script>
+<script src="js/107512/menu2107512.js"></script>
 <!-- menu -->
 	<script>
 		$(function() {
@@ -355,5 +425,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 	</script>
 <!-- //here ends scrolling icon -->
+<script>
+
+	function readURL(input){
+	
+	  if(input.files && input.files[0]){
+	
+		var imageTagID = input.getAttribute("targetID");
+	
+		var reader = new FileReader();
+	
+		reader.onload = function (e) {
+	
+		   var img = document.getElementById(imageTagID);
+	
+		   img.setAttribute("src", e.target.result)
+	
+		}
+	
+		reader.readAsDataURL(input.files[0]);
+	
+	  }
+	
+	}
+	
+</script>
 </body>
 </html>

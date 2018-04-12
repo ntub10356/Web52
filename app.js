@@ -16,7 +16,9 @@ var index = require('./routes/index');
 var about = require('./routes/about');
 var services = require('./routes/services');
 var contact = require('./routes/contact');
-var gallery = require('./routes/gallery');
+var course = require('./routes/course');
+var courseT = require('./routes/courseT');
+var courseCreate = require('./routes/courseCreate');
 var icons = require('./routes/icons');
 var typography = require('./routes/typography');
 //-------------------------------------------------------
@@ -47,7 +49,9 @@ app.use('/index', index);
 app.use('/about', about);
 app.use('/services', services);
 app.use('/contact', contact);
-app.use('/gallery', gallery);
+app.use('/course', course);
+app.use('/courseT', courseT);
+app.use('/courseCreate', courseCreate);
 app.use('/icons', icons);
 app.use('/typography', typography);
 //-------------------------------------------------------
